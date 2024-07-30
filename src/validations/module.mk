@@ -1,5 +1,5 @@
 # Variables
-OSCAL_CLI = npx oscal@latest
+OSCAL_CLI = oscal
 SRC_DIR = ./src
 DIST_DIR = ./dist
 REV5_BASELINES = ./dist/content/rev5/baselines
@@ -8,9 +8,10 @@ REV5_TEMPLATES = ./dist/content/rev5/templates
 # Preparation
 .PHONY: init-validations
 init-validations:
-	@echo "Installing node modules..."
-	npm install
-	$(OSCAL_CLI) use latest
+	@echo "Installing OSCAL CLI..."
+	npm install oscal -g
+	npm install --only=dev
+	oscal -V
 
 # Validation
 .PHONY: build-validations
