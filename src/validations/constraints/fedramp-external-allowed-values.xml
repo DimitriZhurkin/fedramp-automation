@@ -102,7 +102,7 @@
                 <enum value="network">A physical or virtual network.</enum>
             </allowed-values>
 
-            <allowed-values id="connection-security" target="system-implementation/component/prop[@name='connection-security' and @ns='https://fedramp.gov/ns/oscal']/@value" allow-other="yes" level="WARNING">
+            <allowed-values id="connection-security" target="system-implementation/component/prop[@name='connection-security' and @ns='http://fedramp.gov/ns/oscal']/@value" allow-other="yes" level="WARNING">
                 <formal-name>Connection Security</formal-name>
                 <description>Identifies connection security value.</description>
                 <enum value="ipsec-ikev1">Internet Protocol Security (IPSec) Internet Key Exchange (IKE) Version 1</enum>
