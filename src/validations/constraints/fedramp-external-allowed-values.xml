@@ -105,6 +105,7 @@
             <allowed-values id="connection-security" target="system-implementation/component/prop[@name='connection-security' and @ns='http://fedramp.gov/ns/oscal']/@value" allow-other="yes" level="WARNING">
                 <formal-name>Connection Security</formal-name>
                 <description>Identifies connection security value.</description>
+                <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/documentation/ssp/4-ssp-template-to-oscal-mapping/#external-systems-and-services-not-having-fedramp-authorization"/>
                 <enum value="ipsec-ikev1">Internet Protocol Security (IPSec) Internet Key Exchange (IKE) Version 1</enum>
                 <enum value="ipsec-ikev2">Internet Protocol Security (IPSec) Internet Key Exchange (IKE) Version 2</enum>
                 <enum value="ipsec">Internet Protocol Security (IPSec)</enum>
