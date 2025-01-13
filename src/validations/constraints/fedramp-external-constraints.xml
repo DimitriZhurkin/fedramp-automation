@@ -625,7 +625,7 @@
             <expect id="inter-boundary-component-information-type-has-class-attribute" target="$inter-boundary-component" test="prop[@name='information-type' and @ns='http://fedramp.gov/ns/oscal']/@class => exists()" level="ERROR">
                 <formal-name>Inter-Boundary Component's Information Type Has @class Attribute</formal-name>
                 <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/documentation/ssp/4-ssp-template-to-oscal-mapping/#external-systems-and-services-not-having-fedramp-authorization"/>
-                <message>Inter-boundary communication component {@uuid} ({path(.)}) information-type property MUST have the @class attribute. The @class attribute MUST not be empty, and it MUST contain a valid value (incoming or outgoing).</message>
+                <message>In a FedRAMP SSP, the information-type property of the inter-boundary communication component MUST have the @class attribute. The @class attribute MUST NOT be empty, and it MUST contain a valid value (incoming or outgoing).</message>
             </expect>
             <expect id="inventory-item-and-component-has-public" target="(inventory-item | component[@type='service' and prop[@name='implementation-point' and @value='internal']])" test="count(prop[@name='public']) = 1" level="ERROR">
                 <formal-name>Inventory Item and Component Has Public</formal-name>
