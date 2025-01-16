@@ -122,6 +122,7 @@ Examples:
   | information-type-system |
   | inter-boundary-component-has-information-type |
   | inter-boundary-component-information-type-has-class-attribute |
+  | interconnection-component-linked-has-protocol |
   | interconnection-direction |
   | interconnection-security |
   | inventory-item-allows-authenticated-scan |
@@ -390,6 +391,8 @@ Examples:
   | inter-boundary-component-has-information-type-PASS.yaml |
   | inter-boundary-component-information-type-has-class-attribute-FAIL.yaml |
   | inter-boundary-component-information-type-has-class-attribute-PASS.yaml |
+  | interconnection-component-linked-has-protocol-FAIL.yaml |
+  | interconnection-component-linked-has-protocol-PASS.yaml |
   | interconnection-direction-FAIL.yaml |
   | interconnection-direction-PASS.yaml |
   | interconnection-security-FAIL.yaml |
