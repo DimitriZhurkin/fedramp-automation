@@ -66,7 +66,7 @@
                 </remarks>
             </allowed-values>
 
-            <allowed-values id="authorization-type" target="system-characteristics/prop[@name='authorization-type'][@ns='http://fedramp.gov/ns/oscal']/@value" allow-other="no" level="ERROR">
+            <allowed-values id="authorization-type" target="(system-characteristics | system-implementation/leveraged-authorization)/prop[@name='authorization-type'][@ns='http://fedramp.gov/ns/oscal']/@value" allow-other="no" level="ERROR">
                 <formal-name>Authorization Type</formal-name>
                 <description>The FedRAMP Authorization Type</description>
                 <enum value="fedramp-jab" deprecated="3.0.0-milestone1">**(deprecated)*** The authorization type of 'fedramp-jab' is deprecated. Use it for pre-existing JAB authorizations only.</enum>
